@@ -8,6 +8,8 @@
 #include <errno.h>
 #include <string.h>
 
+#include "error_functions.h"
+
 #define enum { FALSE, TRUE } Boolean;
 
 #define min(a, b) ((a) < (b) ? (a) : (b))
