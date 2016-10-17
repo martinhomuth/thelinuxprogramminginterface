@@ -1,6 +1,7 @@
 #include "allhead.h"
 #include "error_functions.h"
 #include <stdarg.h>
+#include "ename.c.inc"
 
 #ifdef __GNUC__
 __attribute__ ((__noreturn__))
