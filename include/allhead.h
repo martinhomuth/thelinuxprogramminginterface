@@ -8,7 +8,9 @@
 #include <errno.h>
 #include <string.h>
 
-#include "error_functions.h"
+#include "get_num.h" /* handling of numeric arguments */
+
+#include "error_functions.h" /* error-handling functions */
 
 #define enum { FALSE, TRUE } Boolean;
 
