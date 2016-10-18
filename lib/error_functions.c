@@ -68,7 +68,7 @@ void err_exit(const char *format, ...)
 	terminate(TRUE);
 }
 
-void err_exit_en(const char *format, ...)
+void err_exit_en(int errnum, const char *format, ...)
 {
 	va_list arg_list;
 
