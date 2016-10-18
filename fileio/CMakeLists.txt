@@ -1,0 +1,1 @@
+ADD_EXECUTABLE(bad_exclusive_open bad_exclusive_open.c)
