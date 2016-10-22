@@ -44,9 +44,6 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	printf("opened fds are %d and %d\n", old_fd, new_fd);
-	sleep(30);
-
 	if (close(old_fd))
 		perror("close old");
 
