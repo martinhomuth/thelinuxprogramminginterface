@@ -2,3 +2,6 @@ INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/lib)
 ADD_EXECUTABLE(copy copy.c)
 ADD_EXECUTABLE(seek_io seek_io.c)
 TARGET_LINK_LIBRARIES(seek_io tlpi_lib)
+
+ADD_EXECUTABLE(tee tee.c)
+TARGET_LINK_LIBRARIES(tee tlpi_lib)
