@@ -1,7 +1,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <ctype.h>
-#include "../include/allhead.h"
+#include "allhead.h"
 
 int main(int argc, char *argv[])
 {
