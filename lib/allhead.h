@@ -12,7 +12,7 @@
 
 #include "error_functions.h" /* error-handling functions */
 
-#define enum { FALSE, TRUE } Boolean;
+typedef enum { FALSE, TRUE } Boolean;
 
 #define min(a, b) ((a) < (b) ? (a) : (b))
 #define max(a, b) ((a) > (b) ? (a) : (b))

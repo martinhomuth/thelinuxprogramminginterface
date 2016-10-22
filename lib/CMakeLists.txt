@@ -3,7 +3,7 @@ SET(library_sources
   get_num.c
 )
 
-INCLUDE_DIRECTORIES(${CMAKE_PROJECT_DIR}/include)
+INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR})
 ADD_LIBRARY(tlpi_lib ${library_sources})
 
 

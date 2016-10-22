@@ -24,6 +24,6 @@ int get_int(const char *arg, int flags, const char *name);
  * determine the base of the conversion and the name argument is used
  * when non-NULL to identify the argument in arg for the error message.
  */
-int get_long(const char *arg, int flags, const char *name);
+long get_long(const char *arg, int flags, const char *name);
 
 #endif
