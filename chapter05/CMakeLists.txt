@@ -1,3 +1,4 @@
+INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/lib)
 
 ADD_EXECUTABLE(ex0501 exercise01.c)
 ADD_EXECUTABLE(ex0502 exercise02.c)
@@ -5,3 +6,7 @@ ADD_EXECUTABLE(ex0503 exercise03.c)
 ADD_EXECUTABLE(ex0504 exercise04.c)
 ADD_EXECUTABLE(ex0505 exercise05.c)
 ADD_EXECUTABLE(ex0506 exercise06.c)
+TARGET_LINK_LIBRARIES(ex0506 tlpi_lib)
+
+ADD_EXECUTABLE(t_readv t_readv.c)
+TARGET_LINK_LIBRARIES(t_readv tlpi_lib)
