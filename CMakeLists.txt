@@ -1,6 +1,6 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.0.0)
 PROJECT(TheLinuxProgrammingInterface)
-
+# for clang call 'CC=/usr/bin/clang cmake ..'
 SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -g -std=c11")
 
 ADD_SUBDIRECTORY(lib)
