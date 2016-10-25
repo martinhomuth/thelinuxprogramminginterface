@@ -14,12 +14,16 @@ static struct free_block mem = {
 
 static struct free_block *head = &mem;
 
+void find_required_block(struct free_block **cur, size_t size)
+{
+
+}
+
 /*
  * void *sbrk(intptr_t increment)
  * previous program break on success
  * (void *) -1 on error
  */
-
 void *my_malloc(size_t size)
 {
 
