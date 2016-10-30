@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 	if (argc < 2 || strcmp(argv[1], "--help") == 0)
 		usage_err("%s [-n num] file", argv[0]);
 
-	int opt, lines = -1;
+	int opt, lines = 10;
 	char *filename;
 	while ((opt = getopt(argc, argv, ":n:")) != -1) {
 		switch (opt) {
