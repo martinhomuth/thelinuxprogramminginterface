@@ -31,11 +31,6 @@ int main(int argc, char *argv[])
 		err_exit("fstat");
 	off_t file_length = file_stats.st_size;
 
-	/* as we read sequential data the buffer can be increased */
-	if (posix_fadvise(fd, 0, file_length, POSIX_FADV_SEQUENTIAL) == -1)
-		err_exit("posix_fadvice");
-
-	
 
 	return EXIT_SUCCESS;
 }
