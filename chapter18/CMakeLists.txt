@@ -1,0 +1,4 @@
+INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/lib)
+
+ADD_EXECUTABLE(t_unlink t_unlink.c)
+TARGET_LINK_LIBRARIES(t_unlink tlpi_lib)

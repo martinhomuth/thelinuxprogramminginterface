@@ -1,0 +1,4 @@
+INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/lib)
+
+ADD_EXECUTABLE(t_signal t_signal.c)
+TARGET_LINK_LIBRARIES(t_signal tlpi_lib)
