@@ -2,6 +2,9 @@
 #include "../lib/allhead.h"
 #include <stdio.h>
 #include <fcntl.h>
+#include <malloc.h>
+
+#define BUFSIZE 4096
 
 int main(int argc, char *argv[])
 {
@@ -30,7 +33,21 @@ int main(int argc, char *argv[])
 	if (fstat(fd, &file_stats) == -1)
 		err_exit("fstat");
 	off_t file_length = file_stats.st_size;
+	printf("file length: %ld\n", (long)file_length);
 
+	void *buf = (char *) memalign(512, BUFSIZE);
+	if (buf == NULL)
+		err_exit("malloc");
 
+	if (lseek(fd, -BUFSIZE, SEEK_END) == -1)
+		err_exit("lseek");
+
+	ssize_t num_read = read(fd, buf, (size_t)BUFSIZE);
+	if (num_read == -1)
+		err_exit("read");
+
+	printf("%s\n", (char *)buf);
+
+	free(buf);
 	return EXIT_SUCCESS;
 }
