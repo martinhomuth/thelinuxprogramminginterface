@@ -1,0 +1,4 @@
+INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/lib)
+
+ADD_EXECUTABLE(t_fifo t_fifo.c)
+TARGET_LINK_LIBRARIES(t_fifo tlpi_lib)
